@@ -1,0 +1,7 @@
+1. go to that repo where .ini file is present in terminal
+2.flash main.cpp hex file using 'pio run -t upload'
+3.connect both esp32 and ur lapy on same network 
+4.find lapy's ip:'ifconfig'
+5.now find esp32's ip using :'nmap -sn lapip/24'
+6.try above before and after disconnecting esp32 to identify its ip.
+7. now flash any code wirelessly using: 'pio run -t upload --upload-port esp'sIP'
